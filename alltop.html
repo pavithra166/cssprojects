@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AllTop-Popular News Sites</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" 
+            crossorigin="anonymous"></script>
+            <style>
+                .navbar-brand{
+                    margin-left: 150px!important;
+                    background-color: #ea2f10;
+                    margin-top:-21px;
+                    margin-bottom:-18px;
+                    padding: 12px 15px;
+                    font-size: 19px;
+                    margin-right: 200px;
+                }
+                #aitems a{
+                
+                color: #fff;
+                position: relative;
+                display: block;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-decoration: none;
+
+            }
+            .navbar a:hover{
+                    background-color:#000;
+                    text-decoration: none;
+                    color:#eeeded;
+                    
+                }
+            .dropdown-menu li a {
+                        display: block;
+                        padding: 12px 15px;
+                        background-color:#000;
+                        
+            }
+            .dropdown-menu{
+                background-color:#000;
+            }
+            .navbar {
+                    border: none;
+                    font-size: 13px;
+                    font-weight: 300;
+                    }                   
+                
+                
+                body {
+                    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    color: #222;
+                    background-color: #fff;
+                    
+                    }
+                .data{
+                    margin-left: 170px;
+                    }
+                .first{
+                    display:flex;
+                    font-weight: bold;
+                    margin-left:-3px;
+                }
+                .second{
+                    display:flex;
+                    font-weight: bold;
+                    margin-left:-3px;
+                }
+                
+                #head{
+                    margin-top:20px;
+                    font-weight: bold;
+                    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+                    font-weight: 300;
+                    line-height: 1.1;
+                    color: inherit;
+                }
+            .navbar-divider {
+                    height: 35px;
+                    margin: 5px 9px;
+                    border-left: 1px solid #eeeded;
+                    }
+            li{
+                    margin-top: 10px;
+            }
+            .login-button {
+                    padding-top: 3px!important;
+                    padding-bottom: 3px!important;
+                    margin-top: 1px!important;
+                    background: #fff!important;
+                    color: #000!important;
+                    }
+            .register-button{
+                    padding-top: 3px!important;
+                    padding-bottom: 3px!important;
+                    margin-top: 1px!important;
+                    background: #ea2f10!important;
+                    color: #000!important;
+            }
+            #head5{
+                margin-top: 10px;
+                font-size: 15px;
+            }
+            #sub{
+                font-size:  5px;
+            }
+            #under li{
+                list-style-type: none;
+                border-bottom: 1px solid;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: initial;
+                font-size: 13px;
+                color: rgba(0, 0, 0, 0.884);
+                font-weight: normal;
+                padding: -10px;
+                text-align: -webkit-match-parent;
+                margin-left:-37px;
+                white-space: nowrap;
+            }
+            #head1{
+                margin-top: 10px;
+            }
+            .second1{
+                margin-left: 25px;
+            }
+            .third1{
+                margin-left: 25px;
+            }
+           
+            
+
+                
+
+            </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: -webkit-sticky; /* Safari */position: sticky;top: 0;">
+            <h5 class="navbar-brand">AllTop</h5>
+            <div class="navbar-collapse collapse" id="aitems">
+                <ul class="nav navbar-nav navbar-right visible-xs">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/viral">Viral</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="/news">News</a></li>
+                <li><a href="/politics">Politics</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tech <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="/tech">Tech</a></li>
+                <li><a href="/cryptocurrency">Cryptocurrency</a></li>
+                <li><a href="/apple">Apple</a></li>
+                <li><a href="/android">Android</a></li>
+                <li><a href="/linux">Linux</a></li>
+                <li><a href="/ecommerce">Ecommerce</a></li>
+                </ul>
+                </li>
+                <li><a href="/sports">Sports</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Entertainment <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="/celebrity">Celebrities</a></li>
+                <li><a href="/funny">Funny</a></li>
+                <li><a href="/videos">Videos</a></li>
+                <li><a href="/music">Music</a></li>
+                <li><a href="/movies">Movies</a></li>
+                <li><a href="/television">Television</a></li>
+                <li><a href="/gaming">Gaming</a></li>
+                <li><a href="/social-media">Social Media</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Lifestyle <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="/health">Health</a></li>
+                <li><a href="/fitness">Fitness</a></li>
+                <li><a href="/travel">Travel</a></li>
+                <li><a href="/beauty">Beauty</a></li>
+                <li><a href="/homes">Homes</a></li>
+                <li><a href="/food">Food</a></li>
+                <li><a href="/photography">Photography</a></li>
+                <li><a href="/deals">Deals</a></li>
+                <li><a href="/lifehacks">Life Hacks</a></li>
+                <li><a href="/astrology">Astrology</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Business <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="/business">Business</a></li>
+                <li><a href="/personal-finance">Personal Finance</a></li>
+                <li><a href="/seo">SEO</a></li>
+                </ul>
+                </li>
+                
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="/education">Education</a></li>
+                <li><a href="/autos">Autos</a></li>
+                <li><a href="/formula-1">Formula 1</a></li>
+                <li><a href="/science">Science</a></li>
+                <li><a href="/religion">Religion</a></li>
+                </ul>
+                </li>
+                <li class="navbar-divider hidden-xs"></li>
+                <li style="font-weight: normal;"><a href="/login" class="hidden-xs login-button">Sign In</a></li>
+                <li style="font-weight: normal;"><a href="/register" class="hidden-xs register-button">Sign Up</a></li>
+                </ul>
+                </div>
+        </nav>
+        <div class="data">
+            <div>
+                <h5 class="text-center hidden-xs" style="font-weight: bold" id="head5">
+                    <a href="https://alltop.com/feed">Announcement: Create your own Customized AllTop Page (with any RSS Feed)!</a>
+                </h5>
+                
+                <h3 id="head">AllTop's Most Popular Sites</h3>
+            </div>
+            
+            <div class="first">
+                <div class="first1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">TechCrunch &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.crunchtype.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="second1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">Wired &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.Wired.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="third1">
+                <img style="height:225 px;width: 225px; margin-top: 55px;"src="https://github.com/pavithra166/cssprojects/blob/master/images/download.jpg?raw=true">
+            </div>
+            </div>
+            <div class="second">
+                <div class="first1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">NYT Frontpage &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.nytimes.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="second1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">Mashable &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.mashable.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="third1">
+                <p id="head1">
+                    <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">Washington postpolitics &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.washingtonpost.com)</a></span></a>
+                    </p>
+                    <ul id="under">
+                        <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                        <li>My own Free tools website</li>
+                        <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                        <li>Most Frequently Asked Questions About Email Marketing</li>
+                        <li>7 Free Websites Every Content Creator Needs to Know</li>
+                        <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                    </ul>
+            </div>
+            </div>
+            <div class="second">
+                <div class="first1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">NRP News &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.nrp.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="second1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">Reddit News &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.reddit.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="third1">
+                <p id="head1">
+                    <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">The Verge &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.theverge.com)</a></span></a>
+                    </p>
+                    <ul id="under">
+                        <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                        <li>My own Free tools website</li>
+                        <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                        <li>Most Frequently Asked Questions About Email Marketing</li>
+                        <li>7 Free Websites Every Content Creator Needs to Know</li>
+                        <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                    </ul>
+            </div>
+            </div>
+            <div class="second">
+                <div class="first1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">TechMeme &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.techmeme.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="second1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">AllTop Viral(Formerly Holy Kaw) &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.alltop.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="third1">
+                <p id="head1">
+                    <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">CNN Top Stories &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.cnn.com)</a></span></a>
+                    </p>
+                    <ul id="under">
+                        <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                        <li>My own Free tools website</li>
+                        <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                        <li>Most Frequently Asked Questions About Email Marketing</li>
+                        <li>7 Free Websites Every Content Creator Needs to Know</li>
+                        <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                    </ul>
+            </div>
+            </div>
+            <div class="second">
+                <div class="first1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">BBC Top Stories &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.bbc.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="second1">
+                <p id="head1">
+                <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">Reutuers &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.retuers.com)</a></span></a>
+                </p>
+                <ul id="under">
+                    <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                    <li>My own Free tools website</li>
+                    <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                    <li>Most Frequently Asked Questions About Email Marketing</li>
+                    <li>7 Free Websites Every Content Creator Needs to Know</li>
+                    <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                </ul>
+            </div>
+            <div class="third1">
+                <p id="head1">
+                    <a style="color: #ea2f10; font-size: 17px; margin-top: 40px;text-decoration: none;" href="http://www.crunchhype.com" target="_blank">Bonus &emsp;<span id="sub"><a href="https://www.crunchhype.com/">(www.bonus.com)</a></span></a>
+                    </p>
+                    <ul id="under">
+                        <li>Most Frequently Asked Questions About NFTs(Non-Fungible Tokens)</li>
+                        <li>My own Free tools website</li>
+                        <li>10 Best Chrome Extensions That Are Perfect for Everyone</li>
+                        <li>Most Frequently Asked Questions About Email Marketing</li>
+                        <li>7 Free Websites Every Content Creator Needs to Know</li>
+                        <li>Top 9 Free AI Tools That Make Your Life Easier</li>
+                    </ul>
+            </div>
+            </div>
+            <div class="down">
+                <h3 id="head">What is AllTop.com?</h3>
+                <p>AllTop aggregates all of the top news and information in real time. Our editors have carefully crafted each topic with the best sources allowing you to see what's happening quickly and from trusted sources. </p>
+            </div>
+            <div class="note">
+                <p><b>New:</b> View our latest alltop page:<a href="https://alltop.com/michigan">&emsp;Michigan:</a></p>
+            </div>
+            
+        </div>
+        <div name="end-bar" style=" height: 55px;background-color: gainsboro; padding-left: 90px; padding-top: 10px; font-size: 15px;color: gray;display:flex; ">
+            <p style="margin-left: 75px;">About | Contact | Privacy Policy | Cookie Policy</p>
+            <p style="margin-left:775px;">Copyright © 2022 AllTop.com</p>
+        </div>
+    </body>
+</html>
