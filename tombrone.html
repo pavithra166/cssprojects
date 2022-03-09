@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trombone Store</title>
+    <script src="https://kit.fontawesome.com/49a6b63fe1.js" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #EEEEEE;
+            font-family: 'Merriweather Sans', sans-serif;
+            margin: 0px;
+        }
+
+        .header {
+            top: 0px;
+            height: 40px;
+            padding: 10px;
+            color: white;
+            background-color: #1E1F26;
+            font-size: 14px;
+            display: flex;
+        }
+
+        select {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQih4ZcIshd1CBMFO_zpkIw3Ezs1geLbNy18g&usqp=CAU");
+            background-size: 20px 40px;
+            background-repeat: no-repeat;
+            background-color: #414655;
+        }
+
+        .menu-bar {
+            height: 40px;
+            color: rgb(68, 66, 66);
+            padding: 10px;
+            display: flex;
+        }
+
+        .menu-bar a,
+        .footer a {
+            font-size: 12px;
+            color: rgb(68, 66, 66);
+            margin: 30px;
+            text-decoration: none;
+        }
+
+        .footer a {
+            margin: 15px;
+            color: rgb(29, 28, 28);
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 60px 30px;
+        }
+
+        .card {
+            height: 250px;
+            width: 260px;
+            border: solid;
+            border-color: rgb(201, 196, 196);
+            text-align: center;
+            color: black;
+            font-size: 15px;
+            float: left;
+            margin: 10px;
+            line-height: 25px;
+
+
+        }
+
+        .cards {
+
+            padding-left: 10%;
+            padding-right: 8%;
+            height: 350px;
+        }
+
+        .ctop {
+            height: 30px;
+            /* width: 250px; */
+            background-color: rgb(216, 209, 209);
+            text-align: center;
+            padding: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            padding-left: 20%;
+            padding-right: 20%;
+
+        }
+
+        .card b {
+
+            font-size: 20px;
+        }
+
+        .footer {
+            height: 50px;
+            background-color: rgb(216, 209, 209);
+            bottom: 0px;
+            padding-top: 10px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <i style="font-size: 35px; margin-right: 10px;" class="fas fa-atom"></i>
+        <div style="margin-right: 570px;">
+            <b>FCC: Product Landing Page</b>
+            <div style="color: #c5c5c9; font-size: 10px; margin-top: 6px;">
+                freeCodeCamp.org
+                <button
+                    style="border: none; background-color: #414655; color: white; font-size: 9px;margin-left: 4px;padding: 5px;">+
+                    Follow</button>
+            </div>
+        </div>
+        <i style="font-size: 20px; color: #c5c5c9; border: 1px solid; border-color: #414655;padding: 10px;"
+            class="fas fa-heart"></i>
+        <div
+            style=" width: 100px; display: flex;background-color: #414655;color: white;font-size: 10px;padding: 5px;margin-left:10px;">
+            <i style="margin-left: 10px; font-size: 12px; padding-top: 10px;" class="fas fa-eye"></i>
+            <b style="padding-top: 10px; margin-left: 3px;">Change View</b>
+        </div>
+        <select style=" width: 40px;color:#a4a4a8; border-color:#414655;  margin-left: 10px;">
+            <option> </option>
+        </select>
+        <i style="margin-left: 10px;font-size: 25px;padding: 9px;border: 1px solid; border-color:#414655;color: #a4a4a8;"
+            class="fas fa-user"></i>
+    </div>
+
+    <div class="menu-bar">
+        <i style="color: green; font-size: 20px;" class="fas fa-bars"></i>
+        <i style="margin-left: 10px; font-size: 25px;" class="fas fa-music"></i>
+        <b style="margin-left: 10px; font-family: 'Playfair Display', serif; font-size:20px; margin-right: 450px;">Original
+            Trombones</b>
+        <nav>
+            <a href="">Features</a>
+            <a href="">How It Works</a>
+            <a href="">Pricing</a>
+        </nav>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+        <center>
+            <h3>Handcrafted, home-made masterpieces</h3>
+            <input style="width: 220px;border: 1px solid;border-color: grey; padding: 5px;"
+                placeholder="Enter your email address" type="text">
+            <br>
+            <button
+                style="width: 120px; margin: 10px; padding: 5px; font-size: 13px; font-weight: bold; color: black; background-color: rgba(255, 196, 0, 0.904); border:none;">GET
+                STARTED</button>
+        </center>
+    </div>
+
+    <table style="padding-right: 9%;padding-left: 10%;">
+        <tr>
+            <td>
+                <i style="color: rgba(255, 115, 0, 0.76);font-size: 40px;" class="fas fa-fire"></i>
+            </td>
+            <td style="padding-top: 8px;"><b style="font-size: 20px;">Premium Materials</b>
+                <p style="margin-top: 0px; font-size: 12px;">Our trombones use the shiniest brass which is sourecd
+                    locally. This will increase the longivity of your purchase.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <i style="color: rgba(255, 115, 0, 0.76);font-size: 40px;" class="fas fa-truck"></i>
+            </td>
+            <td style="padding-top: 8px;">
+                <b style="font-size: 20px;">Fast Shipping</b>
+                <p style="margin-top: 0px; font-size: 12px;">We make sure that you receive your trombone as soon as we
+                    have finished making it. We also provide free returns if you are not satisfied.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <i style="color: rgba(255, 115, 0, 0.76);font-size: 40px;" class="fas fa-battery-full"></i>
+            </td>
+            <td style="padding-top: 8px;">
+                <b style="font-size: 20px;">Quality Assurance</b>
+                <p style="margin-top: 0px; font-size: 12px;">For every purchase you make, we will ensure that there are
+                    no damages or faults and we will check and test the pitch of the instrument.</p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="yt" style="margin-top: 40px; margin-bottom: 50px;">
+        <center>
+            <iframe width="480" height="250" src="https://www.youtube.com/embed/JmJMhAduh7w"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </center>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="ctop">
+                TENOR TROMBONE
+            </div>
+            <b>$600</b>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <button
+                style="width: 100px; padding: 5px; font-size: 13px; font-weight: bold; color: black; background-color: rgba(255, 196, 0, 0.904); border:none;">SELECT</button>
+        </div>
+        <div class="card">
+            <div class="ctop">
+                BASS TROMBONE
+            </div>
+            <b>$900</b>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <button
+                style="width: 100px; padding: 5px; font-size: 13px; font-weight: bold; color: black; background-color: rgba(255, 196, 0, 0.904); border:none;">SELECT</button>
+        </div>
+        <div class="card">
+            <div class="ctop">
+                VALVE TROMBONE
+            </div>
+            <b>$1200</b>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <button
+                style="width: 100px; padding: 5px; font-size: 13px; font-weight: bold; color: black; background-color: rgba(255, 196, 0, 0.904); border:none;">SELECT</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div style="float: right;">
+            <nav>
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="TBcontact.html">Contact</a>
+                <a href="TBabout.html">About Us</a>
+            </nav>
+            <div style="float: right;padding-right: 15px;">
+                <span style="font-size: 12px; color: gray;">Copyright 2016, Original Trombones</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
