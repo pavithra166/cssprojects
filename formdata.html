@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORM DATA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@500&family=Luxurious+Roman&family=Neonderthaw&family=Sora&display=swap"
+        rel="stylesheet">
+    <style>
+        @media only screen and (min-width: 1024px) {
+            body {
+                background-color: rgb(250, 198, 192);
+                font-family: 'Arima Madurai', cursive;
+            }
+
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+                padding: 5%;
+                border: 1px solid salmon;
+                font-family: 'Arima Madurai', cursive;
+                font-size: 3vw;
+                line-height: 5vw;
+
+            }
+
+            th,
+            td {
+                border: none;
+                text-align: left;
+            }
+
+            th {
+                width: 55%;
+            }
+
+            h2 {
+                font-size: 4vw;
+                margin: 3vw;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            body {
+                background-color: rgb(250, 198, 192);
+                font-family: 'Arima Madurai', cursive;
+            }
+
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10vw;
+                background-color: white;
+                padding: 5%;
+                border: 1px solid salmon;
+                font-family: 'Arima Madurai', cursive;
+                font-size: 5vw;
+                line-height: 9vw;
+
+            }
+
+            th,
+            td {
+                border: none;
+                text-align: left;
+            }
+
+            th {
+                width: 55%;
+            }
+
+            h2 {
+                font-size: 7vw;
+                margin: 5vw;
+            }
+        }
+
+        @media only screen and (min-width: 200px) and (max-width: 767px) {
+            body {
+                background-color: rgb(250, 198, 192);
+                font-family: 'Arima Madurai', cursive;
+            }
+
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10vw;
+                background-color: white;
+                padding: 5%;
+                border: 1px solid salmon;
+                font-family: 'Arima Madurai', cursive;
+                font-size: 5vw;
+                line-height: 8vw;
+
+            }
+
+            th,
+            td {
+                border: none;
+                text-align: left;
+            }
+
+            th {
+                width: 55%;
+            }
+
+            h2 {
+                font-size: 8vw;
+                margin: 5vw;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <br>
+        <h2 align="center" id="data"></h2>
+        <tr>
+            <th id="t1"></th>
+            <td id="i1"></td>
+        </tr>
+        <tr>
+            <th id="t2"></th>
+            <td id="i2"></td>
+        </tr>
+        <tr>
+            <th id="t3"></th>
+            <td id="i3"></td>
+        </tr>
+        <tr>
+            <th id="t4"></th>
+            <td id="i4"></td>
+        </tr>
+        <tr>
+            <th id="t5"></th>
+            <td id="i5"></td>
+        </tr>
+        <tr>
+            <th id="t6"></th>
+            <td id="i6"></td>
+        </tr>
+    </table>
+    <script>
+        var fname = localStorage.getItem("First");
+        var lname = localStorage.getItem("Last");
+        var dob = localStorage.getItem("DOB");
+        var gen = localStorage.getItem("Gender");
+        var ph = localStorage.getItem("Phone");
+        var mail = localStorage.getItem("Mail");
+        document.getElementById("data").innerHTML = "Personal Details of " + fname + " " + lname;
+        document.getElementById("t1").innerHTML = "First Name";
+        document.getElementById("i1").innerHTML = fname;
+        document.getElementById("t2").innerHTML = "Last Name";
+        document.getElementById("i2").innerHTML = lname;
+        document.getElementById("t3").innerHTML = "D.O.B";
+        document.getElementById("i3").innerHTML = dob;
+        document.getElementById("t4").innerHTML = "Gender";
+        document.getElementById("i4").innerHTML = gen;
+        document.getElementById("t5").innerHTML = "Contact Number";
+        document.getElementById("i5").innerHTML = ph;
+        document.getElementById("t6").innerHTML = "Email ID";
+        document.getElementById("i6").innerHTML = mail;
+    </script>
+</body>
+
+</html>
